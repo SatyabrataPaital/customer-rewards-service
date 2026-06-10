@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:rewardsdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  sql:
+    init:
+      mode: always
+  jpa:
+    defer-datasource-initialization: true
+
+logging:
+  level:
+    root: INFO
+    com.cap.rewards: DEBUG
+

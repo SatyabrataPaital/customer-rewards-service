@@ -1,0 +1,10 @@
+INSERT INTO customer (name, email) VALUES ('Alice', 'alice@gmail.com');
+INSERT INTO customer (name, email) VALUES ('Bob', 'bob@gmail.com');
+INSERT INTO customer (name, email) VALUES ('Charlie', 'charlie@gmail.com');
+INSERT INTO customer (name, email) VALUES ('David', 'david@gmail.com');
+INSERT INTO customer (name, email) VALUES ('Eve', 'eve@gmail.com');
+INSERT INTO customer (name, email) VALUES ('Frank', 'frank@gmail.com');
+INSERT INTO customer (name, email) VALUES ('Grace', 'grace@gmail.com');
+INSERT INTO customer (name, email) VALUES ('Hank', 'hank@gmail.com');
+INSERT INTO customer (name, email) VALUES ('Ivy', 'ivy@gmail.com');
+INSERT INTO customer (name, email) VALUES ('Jack', 'jack@gmail.com');
