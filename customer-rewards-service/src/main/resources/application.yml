@@ -13,6 +13,8 @@ spring:
     init:
       mode: always
   jpa:
+    hibernate:
+      ddl-auto: create-drop
     defer-datasource-initialization: true
 
 logging:
