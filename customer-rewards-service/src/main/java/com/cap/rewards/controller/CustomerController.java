@@ -1,5 +1,6 @@
 package com.cap.rewards.controller;
 
+import com.cap.rewards.exception.CustomerNotFoundException;
 import com.cap.rewards.model.Customer;
 import com.cap.rewards.repository.CustomerRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -38,7 +39,7 @@ public class CustomerController {
 
     @PutMapping("/{id}")
     public Customer update(@PathVariable Long id, @RequestBody Customer updated) {
-        Customer existing = customerRepository.findById(id).orElseThrow();
+        Customer existing = customerRepository.findById(id).orElseThrow(()-> new CustomerNotFoundException(id));
         existing.setName(updated.getName());
         existing.setEmail(updated.getEmail());
         return customerRepository.save(existing);
